@@ -1,0 +1,32 @@
+[
+	{ "elementInfo":{ 
+		"elementName":"inputUserName", 
+		"locatorType":"id", 
+		"locator":"identifierId"
+		}
+	}, 
+	{ "elementInfo":{ 
+		"elementName":"inputPassword", 
+		"locatorType":"xpath", 
+		"locator":"//input[@name='password']"
+		}
+	}, 
+	{ "elementInfo":{ 
+		"elementName":"buttonNext", 
+		"locatorType":"xpath", 
+		"locator":"//*[text()='Next']"
+		}
+	}, 
+	{ "elementInfo":{ 
+		"elementName":"textInvalidEmailMessage", 
+		"locatorType":"xpath", 
+		"locator":"//div[text()='Couldn't find your Google Account']"
+		}
+	}, 
+	{ "elementInfo":{ 
+		"elementName":"textInvalidPasswordMessage", 
+		"locatorType":"xpath", 
+		"locator":"//span[text()='Wrong password. Try again or click Forgot password to reset it.']"
+		}
+	}
+]

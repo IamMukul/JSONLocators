@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">SmokeTestSuite</th></tr><tr><td><a href="#t0">ChromeBrowserTest</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">33,294</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SmokeTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ChromeBrowserTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.gmail.testScripts.Test_LoginPage</td><td><a href="#m0">userEntersInvalidUserName</a></td><td rowspan="1">1563772836737</td><td rowspan="1">2758</td></tr><tr><th colspan="4">ChromeBrowserTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.gmail.testScripts.Test_LoginPage</td><td><a href="#m1">userEntersCorrectCredentials</a></td><td rowspan="1">1563772825684</td><td rowspan="1">4331</td></tr><tr class="passedeven"><td><a href="#m2">userEntersValidUserNameButInvalidPassword</a></td><td rowspan="1">1563772846085</td><td rowspan="1">4447</td></tr></tbody></table><h2>ChromeBrowserTest</h2><h3 id="m0">com.gmail.testScripts.Test_LoginPage#userEntersInvalidUserName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //div[text()=&apos;Couldn\&apos;t find your Google Account&apos;] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//div[text()=&apos;Couldn\&apos;t find your Google Account&apos;]&apos; is not a valid XPath expression.
+  (Session info: chrome=75.0.3770.142)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ASDP1510_PO0197&apos;, ip: &apos;10.0.9.143&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\MUKULV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56338}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 24a97fb3adda246e5b34f96e192bc9e6
+*** Element info: {Using=xpath, value=//div[text()=&apos;Couldn\&apos;t find your Google Account&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.gmail.generic.ElementFinder.findElement(ElementFinder.java:12)
+	at com.gmail.webElements.loginPage.LoginPageElements.setTextInvalidEmailMessage(LoginPageElements.java:63)
+	at com.gmail.webElements.loginPage.LoginPageElements.getTextInvalidEmailMessage(LoginPageElements.java:91)
+	at com.gmail.pageClasses.LoginPage.getEmailErrorMessage(LoginPage.java:34)
+	at com.gmail.testScripts.Test_LoginPage.userEntersInvalidUserName(Test_LoginPage.java:30)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.gmail.testScripts.Test_LoginPage#userEntersCorrectCredentials</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.gmail.testScripts.Test_LoginPage#userEntersValidUserNameButInvalidPassword</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
